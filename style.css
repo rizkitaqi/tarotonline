@@ -1,0 +1,166 @@
+/* Font & Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fredoka', sans-serif;
+    background-color: #fef8f3;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Container */
+  .container {
+    text-align: center;
+    padding: 2rem;
+    max-width: 500px;
+  }
+  
+  /* Judul & Subjudul */
+  .title {
+    font-size: 2.5rem;
+    color: #8e44ad;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  /* Gender box */
+  .gender-box {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin-bottom: 1.5rem;
+  }
+  
+  .gender-box p {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  
+  .gender-box label {
+    margin: 0 0.5rem;
+    cursor: pointer;
+  }
+  
+  /* Button */
+  #drawButton {
+    background-color: #8e44ad;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  #drawButton:hover {
+    background-color: #732d91;
+  }
+  
+  .card-display {
+    margin-top: 2rem;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    position: relative;
+  }
+  
+  .card-inner {
+    width: 100%;
+    max-width: 280px;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+  
+  .card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: white;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    font-size: 1rem;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  .card-front {
+    background-color: #fefefe;
+  }
+  
+  .card-back {
+    background-color: #fff7fc;
+    color: #8e44ad;
+    transform: rotateY(180deg);
+  }
+  
+  .card-inner.flip {
+    transform: rotateY(180deg);
+  }
+  
+  
+  @media (max-width: 390px) {
+    .title {
+      font-size: 2rem;
+    }
+  
+    .subtitle {
+      font-size: 0.95rem;
+    }
+  
+    .card-inner {
+      height: 220px;
+    }
+  
+    #drawButton {
+      padding: 0.7rem 1.3rem;
+      font-size: 0.95rem;
+    }
+  
+    .card-front, .card-back {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+  }
+
+  @media (max-width: 390px) {
+    .container {
+      padding: 1.5rem;
+    }
+  
+    .card-display {
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .card-inner {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    .card-front, .card-back {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+  }
+
+    
