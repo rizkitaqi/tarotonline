@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Daily Random Tarot</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">🔮 The Daily Random Tarot</h1>
+    <p class="subtitle">Reveal your random ridiculous fate of the day!</p>
+    <p class="subtitle">Made by @rrzkiii</p>
+
+    <div class="gender-box">
+      <p>Choose your energy:</p>
+      <label><input type="radio" name="gender" value="male" /> Male</label>
+      <label><input type="radio" name="gender" value="female" /> Female</label>
+      <label><input type="radio" name="gender" value="other" /> Other</label>
+    </div>
+
+    <button id="drawButton">Draw Your Card</button>
+
+    <div id="cardDisplay" class="card-display">
+        <div class="card-inner" id="cardInner">
+          <div class="card-front">✨</div>
+          <div class="card-back" id="cardBackText">
+            <!-- Teks ramalan akan muncul di sini -->
+          </div>
+        </div>
+      </div>
+      
+      
+      
+
+  <script src="script.js"></script>
+</body>
+</html>
